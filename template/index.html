@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Fraud Detection</title>
+    <link rel="stylesheet" href="D:\Python_imarticus_Pranjal_sir\project\staticFiles\style.css">
+
+</head>
+
+<body>
+    <div class="form-main">
+        <div class="main-wrapper">
+            <h2 class="form-head">Fraud Detection</h2>
+            <form action="{{url_for('predict')}}" method="post" class="form-wrapper">
+                <div class="form-card">
+                    <input class="form-input" type="number" name="full_name" required="required" />
+                    <label class="form-label" id="amount" for="full_name">Amount</label>
+                </div>
+
+                <div class="form-card">
+                    <input class="form-input" type="number" name="email" required="required" />
+                    <label class="form-label" id="oldbalanceOrg" for="email">Old_Balance_ORIG</label>
+                </div>
+
+                <div class="form-card">
+                    <input class="form-input" type="number" name="phone_number" required="required" />
+                    <label class="form-label" id="newbalanceOrig" for="phone_number">New_Balance_ORIG</label>
+                </div>
+
+                <div class="form-card">
+                    <input class="form-input" type="number" name="phone_number" required="required" />
+                    <label class="form-label" id="oldbalanceDest" for="phone_number">Old_Balance_Dest</label>
+                </div>
+
+                <div class="form-card">
+                    <input class="form-input" type="number" name="phone_number" required="required" />
+                    <label class="form-label" id="newbalanceDest" for="phone_number">New_Balance_Dest</label>
+                </div>
+
+                <div class="form-card ">
+                 
+                    <label class="" for="email">Transaction Type</label>
+
+                    <select>
+                    <option value="2">Payment</option>
+                    <option value="4">Transfer</option>
+                    <option value="1">Cash Out</option>
+                    <option value="3">Cash In</option>
+                    <option value="5">Debit</option>
+                    </select>
+
+                   
+
+
+                </div>
+
+                <button>Detect Fraud</button>
+
+            </form>
+            {{ prediction_text }}
+        </div>
+    </div>
+</body>
+
+</html>
