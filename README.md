@@ -1,21 +1,21 @@
 # Electronic-Payments-Fraud-Detection-System-using-Machine-Learning-and-Deep-Learning-Algorithms
-# Key points
+### Key points
 
- Problem Statement 
+- Problem Statement 
 
- Importing the required libraries 
+- Importing the required libraries 
 
- Visualize the Data 
+- Visualize the Data 
 
- Exploratory Data Analysis 
+- Exploratory Data Analysis 
 
- Feature Engineering
+- Feature Engineering
 
- Data Balancing - SMOTE Algorithm
+- Data Balancing - SMOTE Algorithm
 
- Encoding and Splitting Training-Testing Sets
+- Encoding and Splitting Training-Testing Sets
 
- Building the Model - Logistic Regression, Decision 
+- Building the Model - Logistic Regression, Decision 
  Tree, XGBoost, Artificial Neural Network 
  
- Model Training and Evaluation
+- Model Training and Evaluation
